@@ -1,0 +1,224 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.signupContainer {
+  display: flex;
+  /* min-height: 100vh; */
+  width: 100%;
+  background-color: white;
+  height: 100vh;
+  font-family: "Poppins", serif;
+}
+
+/* Form Section */
+.formSection {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .formSection {
+    width: 73%;
+    /* padding: 3rem; */
+    /* margin-left: 10vw; */
+    /* background-color: red; */
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .signinLink {
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+  }
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: left;
+  /* gap: 0.5rem; */
+  /* margin-bottom: 3rem; */
+}
+
+.logo span {
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.sparkIcon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #22c55e;
+}
+
+/* Typography */
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 57px;
+  font-family: "Poppins", serif;
+  margin-bottom: 2vh;
+  color: #111827;
+}
+
+.signinLink {
+  margin-bottom: 2vh;
+}
+
+.signinLink span {
+  font-size: 22px;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  line-height: 33px;
+}
+
+.link {
+  font-size: 15px;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/* Form */
+.signupForm {
+  max-width: 24rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  /* gap: 0.5rem; */
+}
+
+.inputGroup label {
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
+}
+
+/* Terms checkbox */
+.termsGroup {
+  display: flex;
+  gap: 2px;
+  align-items: flex-start;
+  /* margin-top: 1rem; */
+}
+
+.termsGroup input[type="checkbox"] {
+  margin-top: 0.25rem;
+}
+
+.termsGroup label {
+  /* font-size: 0.875rem; */
+  color: #374151;
+  /* gap: 2px; */
+}
+
+/* Submit button */
+.submitButton {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #d1d5db;
+  color: #374151;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submitButton:hover {
+  background-color: #9ca3af;
+}
+
+/* Links */
+.link {
+  color: #22c55e;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #16a34a;
+}
+
+/* Captcha text */
+.captchaText {
+  /* font-size: 0.75rem; */
+  color: #6b7280;
+  margin-top: 2rem;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  gap: 3px;
+}
+
+/* Image Section */
+.imageSection {
+  display: none;
+  position: relative;
+  overflow: hidden;
+  /* background-color: #fbbf24; */
+}
+
+@media (min-width: 1024px) {
+  .imageSection {
+    display: block;
+    width: 40%;
+    height: 100vh;
+    /* background-color: blue; */
+  }
+  .captchaText {
+    /* font-size: 0.75rem; */
+    color: #6b7280;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .formSection {
+    padding: 1.5rem;
+  }
+}
